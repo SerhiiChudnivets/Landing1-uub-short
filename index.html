@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Ukrainian Universal Exchange</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="vendor/simple-line-icons/css/simple-line-icons.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <!-- Custom styles for this template -->
+    <link href="css/landing-page.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <div class="row">
+        <div class="col-lg-6 col-xl-6 col-md-6 col-sm-6 col-xs-6">
+            <nav class="navbar navbar-light bg-light static-top">
+                <div class="container">
+
+
+                    <a class="navbar-brand" href="#">
+                        <img src="img/logo.png" />
+                    </a>
+                </div>
+            </nav>
+        </div>
+        <div class="col-lg-5 col-xl-5 col-md-5 col-sm-5 col-xs-5 d-flex align-items-center justify-content-end mr-4">
+            <h3>+ 38 (044) 221-32-33</h3>
+        </div>
+
+    </div>
+
+
+    <!-- Masthead -->
+    <header class="masthead text-white text-center">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-9 mx-auto">
+                    <h1 class="mb-5">Ukrainian Universal Exchange</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-10 col-sm-10 col-lg-8 col-xl-7 col-xs-12 p-0  mx-auto">
+                    <form>
+                        <div class="form-group d-flex justify-content-between">
+
+                            <div class="col-md-3 col-sm-3 col-lg-3 col-xs-3 box text-center label-height">
+                                <label for="item1" class="btn btn-dark" onclick="add_check_cars()">
+
+                                    <img src="img/house.png" id="img_item1" alt="..." class="img-thumbnail img-check">
+
+
+                                    <br>
+                                    <p class="m-0"> Realty</p>
+                                    <img id="img_check1" src="img/check.png" class="d-none">
+                                </label>
+                            </div>
+
+                            <br>
+                            <input type="checkbox" class="d-none" name="chk1" id="item1" autocomplete="off">
+
+                            <div class="col-md-3 col-lg-3  col-sm-3 col-xs-3 box text-center label-height">
+                                <label for='item2' class="btn btn-dark" onclick="add_check_rent()">
+                                    <img src="img/Car.png" src="img/house.png" id="img_item2" alt="..." class="img-thumbnail img-check">
+
+                                    <br>
+                                    <p class="m-0">Cars</p>
+                                    <img id="img_check2" src="img/check.png" class="d-none">
+                                </label>
+                            </div>
+
+                            <br>
+                            <input type="checkbox" name="chk2" class="d-none" id="item2" autocomplete="off">
+
+                            <div class="col-md-3 col-lg-3  col-sm-3 col-xs-3 box  text-center label-height">
+                                <label for="item3" class="btn btn-dark" onclick="add_check_property()">
+                                    <img src="img/anvil.png" id="img_item3" alt="..." class="img-thumbnail img-check">
+                                    <br>
+                                    <p class="m-0">Rent</p>
+                                    <img id="img_check3" src="img/check.png" class="d-none">
+                                </label>
+                            </div>
+
+                            <br>
+                            <input type="checkbox" name="chk3" id="item3" class="d-none" autocomplete="off">
+
+                        </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-10 col-lg-8 col-xl-7 d-flex mx-auto">
+                    <div class="col-lg-4 pl-0">
+                        <input id="surname" type="text" class="form-control form-control-lg" placeholder="Surname">
+                    </div>
+                    <br>
+                    <div class="col-lg-4">
+                        <input id="name" type="text" class="form-control form-control-lg" placeholder="Name">
+                    </div>
+                    <br>
+                    <div class="col-lg-4 pr-0">
+                        <input id="second_name" type="text" class="form-control form-control-lg" placeholder="Second name">
+                    </div>
+                    <br>
+
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+
+                    <div class="form-row">
+                        <div class="col-12 col-md-9 mb-2 mb-md-0">
+                            <input type="email" id="email" class="form-control form-control-lg" placeholder="Enter your email...">
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <button type="button" class="btn btn-block btn-lg btn-primary" onclick="subscribe()">Subscribe</button>
+                        </div>
+                    </div>
+                    </form>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <!-- Footer -->
+    <footer class="footer bg-light ">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text-center mx-auto text-lg-left my-auto">
+
+                    <p class="text-muted small mb-4 mb-lg-0 text-center">&copy; Ukrainian Universal Exchange 2018.</p>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="js/custom.js"></script>
+    <script src="js/custom2.js"></script>
+
+</body>
+
+</html>
